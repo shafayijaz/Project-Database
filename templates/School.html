@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    School
+{% endblock %}
+
+{% block heading %}
+    School Actions
+{% endblock %}
+
+{% block body %}
+Select one option
+    <form action="{{ url_for('handleSchool') }}" method="post">
+        <ul>
+            <li><input name="button" type="radio" value= "schoolView">View</li>
+            <li><input name="button" type="radio" value= "InsSchool">Update</li>
+            <li><input name="button" type="radio" value= "schoolDelete">Delete</li>
+        </ul>
+        <input type="submit" value="Submit"/>
+    </form>
+{% endblock %}

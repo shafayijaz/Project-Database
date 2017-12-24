@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    School
+{% endblock %}
+
+{% block heading %}
+    School Delete
+{% endblock %}
+
+{% block body %}
+Select one option
+    <form action="{{ url_for('schoolDelete') }}" method="post">
+        <ul>
+            {% for i in schoolDelete %}
+                <li><input name="RegNo" type="radio" value="{{ i.RegNo }}"/>
+                    School Name : {{ i.Sname }}, Location : {{ i.Location }}
+                </li>
+            {% endfor %}
+        </ul>
+    <input type="submit" value="Delete"/>
+    </form>
+{% endblock %}

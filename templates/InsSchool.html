@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    School
+{% endblock %}
+
+{% block heading %}
+    Inserting into School
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('schoolInsert') }}" method="post">
+
+        School name:<br>
+        <input type="text" name="Sname"><br>
+
+        Location:<br>
+        <input type="text" name="Location"><br>
+
+        Phone Number:<br>
+        <input type="text" name="PhoneNo"><br>
+
+        Website:<br>
+        <input type="text" name="Website"><br>
+
+        <input type="submit" value="Insert School">
+    </form>
+{% endblock %}

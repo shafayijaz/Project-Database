@@ -1,7 +1,14 @@
 body {
 	margin: 0;
-    font: 16px 'Poiret One';
-    background-color: #818181;
+	font: 16px 'Poiret One';
+}
+
+th {
+    text-align: left;
+}
+
+li {
+	list-style: none;
 }
 
 /* Selecting Text */
@@ -12,21 +19,21 @@ body {
 /* Side Navigation Bar */
 .sidenav {
     height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #2e2e2e;     /*Gray*/
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #2e2e2e;     /*Gray*/
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+	padding-top: 60px;
 }
 
 /* Side Navigation Bar Open Button */
 .openSideNav {
     font-size:30px;
-    cursor:pointer;
+	cursor:pointer;
 }
 
 /* Side Navigation Bar Open Button Selection */
@@ -36,11 +43,11 @@ body {
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;                 /*Light Gray*/
-    display: block;
-    transition: 0.3s;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;                 /*Light Gray*/
+	display: block;
+	transition: 0.3s;
 }
 
 .sidenav a:hover , .titleBarMenu a:hover {
@@ -50,10 +57,11 @@ body {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 15px;
-    font-size: 36px;
-    margin-left: 50px;
+	right: 15px;
+	font-size: 36px;
+	margin-left: 50px;
 }
+
 #main {
     transition: margin-left .5s;
     padding: 16px;
@@ -61,38 +69,38 @@ body {
 
 #Title {
     transition: margin-left .5s;
-    padding: 16px;
+	padding: 16px;
     background: #2e2e2e;            /*Darker Gray*/
     color: #818181;                 /*Lighter Gray*/
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
 }
 
 .titleBar {
     position: relative;
-    left: 100px;
-    font-size: 30px;
-    font-family: 'Permanent Marker', cursive;
-    text-transform: capitalize;
-    line-height:36px;
-    padding: 16px;
-    background: #1abc9c;            /*Torquoise*/
-    color: white;
+	left: 100px;
+	font-size: 30px;
+	font-family: 'Permanent Marker', cursive;
+	text-transform: capitalize;
+	line-height:36px;
+	padding: 16px;
+	background: #1abc9c;            /*Torquoise*/
+	color: white;
 }
 
 .titleBarMenu {
     font-size: 30px;
-    position: absolute;
-    right: 100px;
+	position: absolute;
+	right: 100px;
 }
 
 .titleBarMenu a {
     color: #818181;                 /*Light Gray*/
-    text-decoration: none;
-    display: inline-block;
+	text-decoration: none;
+	display: inline-block;
 }
 
 .titleBar::selection {

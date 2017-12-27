@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block heading %}
+    About
+{% endblock %}
+
+{% block body %}
+  <style>
+  /* Animations */
+  #fadeIn {
+  	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  }
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadein {
+  	from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+    /* About - Card View */
+    html { box-sizing: border-box; }
+
+    *, *:before, *:after { box-sizing: inherit; }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      text-align: center;
+    }
+
+    @media (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .container { padding: 0 16px; }
+
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title { color: grey; }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #2e2e2e;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover { background-color: #818181; }
+  </style>
+
+
+    <div class="row">
+      <div class="column" id="fadeIn">
+        <div class="card">
+          <img src="{{ url_for('static', filename='img/pictures/Shahzaib.jpg') }}" alt="Shahzaib" width="300" height="300"/>
+          <div class="container">
+            <h2>Shahzaib Waseem</h2>
+            <p class="title">Front-End Designer</p>
+            <p>Front End, Python Server</p>
+            <p>shahzaib.waseem96@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column" id="fadeIn">
+        <div class="card">
+          <img src="{{ url_for('static', filename='img/pictures/Shafay.jpg') }}" alt="Shafay" width="300" height="300"/>
+          <div class="container">
+            <h2>Shafay Ijaz</h2>
+            <p class="title">Database Designer</p>
+            <p>ERD, Database Schema, SQL Queries</p>
+            <p>mijaz.bscs16seecs@seecs.edu.pk</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column" id="fadeIn">
+        <div class="card">
+          <img src="{{ url_for('static', filename='img/pictures/Sanan.jpg') }}" alt="Sanan" width="300" height="300"/>
+          <div class="container">
+            <h2>Sanan</h2>
+            <p class="title">Fuck BOi</p>
+            <p>I dyd absylutili dyd notang. ei am a rytrd. kill mi plx</p>
+            <p>sanan@randi.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
